@@ -1,14 +1,13 @@
 const CSVToJSON = require("csvtojson");
 const FileSystem = require("fs");
+const d3 = require("../scripts/d3js/d3.js");
 
-CSVToJSON.fromFile("./data/DataEnem.csv").then( source => {
+CSVToJSON().fromFile("./data/DataEnem.csv").then( source => {
     console.log(source);
 })
 
-let inputData = 'data/DataEnem.csv';
-let jsonData = 'data/DataEnem.json';
-
-generateJsonFileFromCsv(inputData, jsonData);
+// import CSVToJSON from "../node_modules/csvtojson";
+// import FileSystem from "../node_modules/";
 
 const canvas = d3.select(".canvas")
 
