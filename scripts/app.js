@@ -1,15 +1,21 @@
-const CSVToJSON = require("csvtojson");
-const FileSystem = require("fs");
-const d3 = require("../scripts/d3js/d3.js");
+ //const CSVToJSON = require("../node_modules/csvtojson/src/Converter.ts");
+// const FileSystem = require("fs");
+// const d3 = require("../node_modules/d3");
+//import * as CSVToJSON from '../node_modules/csvtojson/bin/csvtojson.js'
+//import * as CSVToJSON from '../node_modules/csvtojson/src/Converter.ts'
 
-CSVToJSON().fromFile("./data/DataEnem.csv").then( source => {
-    console.log(source);
-})
+//const getCanvas = document.querySelector(".canvas");
+
+// CSVToJSON.fromFile("./data/DataEnem.csv").then( source => {
+//     console.log(source);
+// })
+
 
 // import CSVToJSON from "../node_modules/csvtojson";
 // import FileSystem from "../node_modules/";
 
-const canvas = d3.select(".canvas")
+/*
+const canvas = d3.select(getCanvas)
 
 let dataArray = [
     {width: 25, height: 4, fill: "pink"},
@@ -39,4 +45,4 @@ rect.data(dataArray)
     .attr("x", (d, i) => {return i*35})
     .attr("y", (d,i) => {
         return 100 - (d.height*3);
-    })
+    })*/
