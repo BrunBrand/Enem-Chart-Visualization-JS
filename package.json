@@ -4,15 +4,30 @@
   "description": "Enem Data Visualization",
   "main": "app.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build": "node_modules/.bin/webpack  --mode production",
+    "serve": "webpack-dev-server --mode development"
   },
   "author": "lordfarron",
   "license": "ISC",
   "dependencies": {
     "@types/node": "^14.14.10",
+    "chart.js": "^2.9.4",
     "convert-csv-to-json": "^1.0.0",
     "csvtojson": "^2.0.10",
     "d3": "^6.2.0",
-    "fast-csv": "^4.3.5"
+    "fast-csv": "^4.3.5",
+    "node-fetch": "^2.6.1",
+    "regenerator-runtime": "^0.13.7"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.12.8",
+    "@babel/core": "^7.12.9",
+    "@babel/preset-env": "^7.12.7",
+    "babel-loader": "^8.0.5",
+    "webpack": "^4.29.6",
+    "webpack-cli": "^3.2.3",
+    "webpack-dev-server": "^3.2.1",
+    "css-loader": "^5.0.1",
+    "style-loader": "^2.0.0"
   }
 }
