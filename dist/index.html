@@ -14,6 +14,7 @@
 
     body{
         margin: 0;
+        background-color: rgb(43, 43, 43);
     }
 
     nav{
@@ -30,21 +31,57 @@
     }
 
     .canvas{
-        margin-top: 20%;
+        margin-top: 10rem;
+        width: 30vw;
+        height: 30vh;
+    }
+
+    .main-view{
+       
+
+    }
+
+    #chart{
+        margin: 0 auto;
+        margin-top: 5rem;
+        width: 100% !important;
+        height: 100% !important;        
+    }
+
+    .btn{
+        margin-top: 3rem !important;
+        height: 4rem;
+        color: black !important;
+        background-color: rgb(137, 221, 151) !important;
+    }
+
+    .buttons{
+        justify-content: space-around;
+        
+        display: flex;
     }
 
     </style>
 </head>
-<body>
-    <header>
-        <nav class="nav" id="navId">
-            <h1>Enem Visualização dos Dados</h1>
-        </nav>
-    </header>
+    <body>
+        <header>
+            <nav class="nav" id="navId">
+                <h1>Enem Visualização dos Dados</h1>
+            </nav>
+        </header>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#89dd97" fill-opacity="1" d="M0,0L0,256L36.9,256L36.9,288L73.8,288L73.8,96L110.8,96L110.8,32L147.7,32L147.7,256L184.6,256L184.6,96L221.5,96L221.5,224L258.5,224L258.5,0L295.4,0L295.4,224L332.3,224L332.3,192L369.2,192L369.2,32L406.2,32L406.2,96L443.1,96L443.1,288L480,288L480,192L516.9,192L516.9,256L553.8,256L553.8,160L590.8,160L590.8,32L627.7,32L627.7,128L664.6,128L664.6,96L701.5,96L701.5,320L738.5,320L738.5,192L775.4,192L775.4,288L812.3,288L812.3,224L849.2,224L849.2,160L886.2,160L886.2,192L923.1,192L923.1,256L960,256L960,192L996.9,192L996.9,160L1033.8,160L1033.8,288L1070.8,288L1070.8,64L1107.7,64L1107.7,256L1144.6,256L1144.6,320L1181.5,320L1181.5,96L1218.5,96L1218.5,224L1255.4,224L1255.4,128L1292.3,128L1292.3,32L1329.2,32L1329.2,32L1366.2,32L1366.2,128L1403.1,128L1403.1,32L1440,32L1440,0L1403.1,0L1403.1,0L1366.2,0L1366.2,0L1329.2,0L1329.2,0L1292.3,0L1292.3,0L1255.4,0L1255.4,0L1218.5,0L1218.5,0L1181.5,0L1181.5,0L1144.6,0L1144.6,0L1107.7,0L1107.7,0L1070.8,0L1070.8,0L1033.8,0L1033.8,0L996.9,0L996.9,0L960,0L960,0L923.1,0L923.1,0L886.2,0L886.2,0L849.2,0L849.2,0L812.3,0L812.3,0L775.4,0L775.4,0L738.5,0L738.5,0L701.5,0L701.5,0L664.6,0L664.6,0L627.7,0L627.7,0L590.8,0L590.8,0L553.8,0L553.8,0L516.9,0L516.9,0L480,0L480,0L443.1,0L443.1,0L406.2,0L406.2,0L369.2,0L369.2,0L332.3,0L332.3,0L295.4,0L295.4,0L258.5,0L258.5,0L221.5,0L221.5,0L184.6,0L184.6,0L147.7,0L147.7,0L110.8,0L110.8,0L73.8,0L73.8,0L36.9,0L36.9,0L0,0L0,0Z"></path></svg>
 
+        <div class="main-view container">
+        <canvas id="chart" width="400" height="400"></canvas>
+        <!-- <div class="canvas"></div> -->
 
-    <canvas id="chart" width="400" height="400"></canvas>
-    <div class="canvas"></div>
+            <div class="buttons">
+                <button class="btn">Taxa de Aprovação/Ano</button>
+                <button class="btn">Taxa de Reprovação/Ano</button>
+                <button class="btn">Taxa de Abandono/Ano</button>
+            </div>
+        </div>
+    </div>
 
 
     <script></script>
